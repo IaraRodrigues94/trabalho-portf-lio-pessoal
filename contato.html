@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">Iara Souza</div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+
+    <nav>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container contato-grid">
+    <section>
+      <div class="pagina-topo">
+        <h1>Contato</h1>
+        <p>Entre em contato comigo pelos canais abaixo ou envie uma mensagem no formulário.</p>
+      </div>
+
+      <div class="card contato-info">
+          <p><strong>E-mail:</strong> <a href="mailto:imob.gestor.bi@gmail.com">imob.gestor.bi@gmail.com</a></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <form id="form-contato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+          <small class="erro" id="erro-nome"></small>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+          <small class="erro" id="erro-email"></small>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+          <small class="erro" id="erro-mensagem"></small>
+        </div>
+
+        <button type="submit" class="botao">Enviar mensagem</button>
+        <p id="mensagem-sucesso" class="sucesso"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Iara Souza | Portfólio pessoal</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
